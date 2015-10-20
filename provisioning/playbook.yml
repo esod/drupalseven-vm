@@ -16,8 +16,8 @@
     - geerlingguy.firewall
     - geerlingguy.git
     - geerlingguy.postfix
-    - { role: geerlingguy.apache, when: drupalvm_webserver == 'apache' }
-    - { role: geerlingguy.nginx, when: drupalvm_webserver == 'nginx' }
+    - { role: geerlingguy.apache, when: drupalseven_webserver == 'apache' }
+    - { role: geerlingguy.nginx, when: drupalseven_webserver == 'nginx' }
     - geerlingguy.mysql
     - geerlingguy.php
     - geerlingguy.php-pecl

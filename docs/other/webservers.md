@@ -1,6 +1,6 @@
 Drupal VM's configuration works with multiple operating systems _and_ with multiple webservers. You can switch between Apache and Nginx (depending on which server you prefer) with ease.
 
-All you need to do is change the `drupalvm_webserver` variable inside your customized `config.yml`, choosing either `apache` or `nginx`.
+All you need to do is change the `drupalseven_webserver` variable inside your customized `config.yml`, choosing either `apache` or `nginx`.
 
 Because the webservers are configured somewhat differently, there are a few things you should configure depending on which webserver you use.
 

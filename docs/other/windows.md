@@ -31,7 +31,7 @@ You can use the [vagrant-winnfsd](https://github.com/GM-Alex/vagrant-winnfsd) pl
 
 ### "Authentication failure" on vagrant up
 
-Some Windows users have reported running into an issue where an authentication failure is reported once the VM is booted (e.g. `drupalvm: Warning: Authentication failure. Retrying...` — see [#170](https://github.com/geerlingguy/drupal-vm/issues/170)). To fix this, do the following:
+Some Windows users have reported running into an issue where an authentication failure is reported once the VM is booted (e.g. `drupalseven: Warning: Authentication failure. Retrying...` — see [#170](https://github.com/geerlingguy/drupal-vm/issues/170)). To fix this, do the following:
 
   1. Delete `~/.vagrant.d/insecure_private_key`
   2. Run `vagrant ssh-config`

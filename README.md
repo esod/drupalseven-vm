@@ -1,8 +1,8 @@
 ![Drupal VM Logo](https://raw.githubusercontent.com/geerlingguy/drupal-vm/master/docs/images/drupal-vm-logo.png)
 
-[![Build Status](https://travis-ci.org/geerlingguy/drupal-vm.svg?branch=master)](https://travis-ci.org/geerlingguy/drupal-vm) [![Documentation Status](https://readthedocs.org/projects/drupal-vm/badge/?version=latest)](http://docs.drupalvm.com)
+[![Build Status](https://travis-ci.org/geerlingguy/drupal-vm.svg?branch=master)](https://travis-ci.org/geerlingguy/drupal-vm) [![Documentation Status](https://readthedocs.org/projects/drupal-vm/badge/?version=latest)](http://docs.drupalseven.com)
 
-[Drupal VM](http://www.drupalvm.com/) is A VM for local Drupal development, built with Vagrant + Ansible.
+[Drupal VM](http://www.drupalseven.com/) is A VM for local Drupal development, built with Vagrant + Ansible.
 
 This project aims to make spinning up a simple local Drupal test/development environment incredibly quick and easy, and to introduce new developers to the wonderful world of Drupal development on local virtual machines (instead of crufty old MAMP/WAMP-based development).
 
@@ -29,11 +29,11 @@ It will install the following on an Ubuntu 14.04 (by default) linux VM:
 
 It should take 5-10 minutes to build or rebuild the VM from scratch on a decent broadband connection.
 
-Please read through the rest of this README and the [Drupal VM documentation](http://docs.drupalvm.com/) for help getting Drupal VM configured and integrated with your development workflow.
+Please read through the rest of this README and the [Drupal VM documentation](http://docs.drupalseven.com/) for help getting Drupal VM configured and integrated with your development workflow.
 
 ## Documentation
 
-Full Drupal VM documentation is available at http://docs.drupalvm.com/
+Full Drupal VM documentation is available at http://docs.drupalseven.com/
 
 ## Customizing the VM
 
@@ -49,7 +49,7 @@ If you want to switch from Drupal 8 (default) to Drupal 7 or 6 on the initial in
 
 ## Quick Start Guide
 
-This Quick Start Guide will help you quickly build a Drupal 8 site on the Drupal VM using the included example Drush make file. You can also use the Drupal VM with a [Local Drupal codebase](http://docs.drupalvm.com/en/latest/deployment/local-codebase/) or even a [Drupal multisite installation](http://docs.drupalvm.com/en/latest/deployment/multisite/).
+This Quick Start Guide will help you quickly build a Drupal 8 site on the Drupal VM using the included example Drush make file. You can also use the Drupal VM with a [Local Drupal codebase](http://docs.drupalseven.com/en/latest/deployment/local-codebase/) or even a [Drupal multisite installation](http://docs.drupalseven.com/en/latest/deployment/multisite/).
 
 ### 1 - Install dependencies (VirtualBox and Vagrant)
 
@@ -78,10 +78,10 @@ Note: *If there are any errors during the course of running `vagrant up`, and it
 
 ### 3 - Configure your host machine to access the VM.
 
-  1. [Edit your hosts file](http://www.rackspace.com/knowledge_center/article/how-do-i-modify-my-hosts-file), adding the line `192.168.88.88  drupalvm.dev` so you can connect to the VM.
+  1. [Edit your hosts file](http://www.rackspace.com/knowledge_center/article/how-do-i-modify-my-hosts-file), adding the line `192.168.88.88  drupalseven.dev` so you can connect to the VM.
     - You can have Vagrant automatically configure your hosts file if you install the `hostsupdater` plugin (`vagrant plugin install vagrant-hostsupdater`). All hosts defined in `apache_vhosts` or `nginx_hosts` will be automatically managed.
     - You can also have Vagrant automatically assign an available IP address to your VM if you install the `auto_network` plugin (`vagrant plugin install vagrant-auto_network`), and set `vagrant_ip` to `0.0.0.0` inside `config.yml`.
-  2. Open your browser and access [http://drupalvm.dev/](http://drupalvm.dev/). The default login for the admin account is `admin` for both the username and password.
+  2. Open your browser and access [http://drupalseven.dev/](http://drupalseven.dev/). The default login for the admin account is `admin` for both the username and password.
 
 ## Extra software/utilities
 
@@ -102,22 +102,22 @@ If you don't want or need one or more of these extras, just delete them or comme
 
 ## Using Drupal VM
 
-Drupal VM is built to integrate with every developer's workflow. Many guides for using Drupal VM for common development tasks are available on the [Drupal VM documentation site](http://docs.drupalvm.com):
+Drupal VM is built to integrate with every developer's workflow. Many guides for using Drupal VM for common development tasks are available on the [Drupal VM documentation site](http://docs.drupalseven.com):
 
-  - [Syncing Folders](http://docs.drupalvm.com/en/latest/extras/syncing-folders/)
-  - [Connect to the MySQL Database](http://docs.drupalvm.com/en/latest/extras/mysql/)
-  - [Use Apache Solr for Search](http://docs.drupalvm.com/en/latest/extras/solr/)
-  - [Use Drush with Drupal VM](http://docs.drupalvm.com/en/latest/extras/drush/)
-  - [Use Drupal Console with Drupal VM](http://docs.drupalvm.com/en/latest/extras/drupal-console/)
-  - [Use Varnish with Drupal VM](http://docs.drupalvm.com/en/latest/extras/varnish/)
-  - [Use MariaDB instead of MySQL](http://docs.drupalvm.com/en/latest/extras/mariadb/)
-  - [View Logs with Pimp my Log](http://docs.drupalvm.com/en/latest/extras/pimpmylog/)
-  - [Profile Code with XHProf](http://docs.drupalvm.com/en/latest/extras/xhprof/)
-  - [Debug Code with XDebug](http://docs.drupalvm.com/en/latest/extras/xdebug/)
-  - [Catch Emails with MailHog](http://docs.drupalvm.com/en/latest/extras/mailhog/)
-  - [Test with Behat and Selenium](http://docs.drupalvm.com/en/latest/extras/behat/)
-  - [PHP 7 on Drupal VM](http://docs.drupalvm.com/en/latest/other/php-7/)
-  - [Drupal 6 Notes](http://docs.drupalvm.com/en/latest/other/drupal-6/)
+  - [Syncing Folders](http://docs.drupalseven.com/en/latest/extras/syncing-folders/)
+  - [Connect to the MySQL Database](http://docs.drupalseven.com/en/latest/extras/mysql/)
+  - [Use Apache Solr for Search](http://docs.drupalseven.com/en/latest/extras/solr/)
+  - [Use Drush with Drupal VM](http://docs.drupalseven.com/en/latest/extras/drush/)
+  - [Use Drupal Console with Drupal VM](http://docs.drupalseven.com/en/latest/extras/drupal-console/)
+  - [Use Varnish with Drupal VM](http://docs.drupalseven.com/en/latest/extras/varnish/)
+  - [Use MariaDB instead of MySQL](http://docs.drupalseven.com/en/latest/extras/mariadb/)
+  - [View Logs with Pimp my Log](http://docs.drupalseven.com/en/latest/extras/pimpmylog/)
+  - [Profile Code with XHProf](http://docs.drupalseven.com/en/latest/extras/xhprof/)
+  - [Debug Code with XDebug](http://docs.drupalseven.com/en/latest/extras/xdebug/)
+  - [Catch Emails with MailHog](http://docs.drupalseven.com/en/latest/extras/mailhog/)
+  - [Test with Behat and Selenium](http://docs.drupalseven.com/en/latest/extras/behat/)
+  - [PHP 7 on Drupal VM](http://docs.drupalseven.com/en/latest/other/php-7/)
+  - [Drupal 6 Notes](http://docs.drupalseven.com/en/latest/other/drupal-6/)
 
 ## Other Notes
 

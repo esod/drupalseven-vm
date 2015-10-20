@@ -12,7 +12,7 @@ Make sure you have an SSH key you can use to connect to your DigitalOcean drople
 
 Once you are logged into DigitalOcean and have added your SSH key, click the 'Create Droplet' button on your Droplets page. For the Droplet, choose the following options:
 
-  - **Hostname**: Choose a hostname for your site (e.g. `example.drupalvm.com`)
+  - **Hostname**: Choose a hostname for your site (e.g. `example.drupalseven.com`)
   - **Size**: 1 GB / 1 CPU (currently $10/month; you can choose a higher plan if needed)
   - **Region**: Choose whatever region is geographically nearest to you and your site visitors
   - **Settings**: (Nothing here affects how Drupal VM works, choose what you'd like)
@@ -37,7 +37,7 @@ The changes outlined in `prod.overrides.yml` disable development-environment too
 
 The only other thing you need to do is copy the inventory file `example.inventory` to `inventory` (so it is located at `prod/inventory`). By default, it reads:
 
-    [drupalvm]
+    [drupalseven]
     1.2.3.4 ansible_ssh_user=root
 
 Change the host `1.2.3.4` to either the IP address or the hostname of your DigitalOcean Droplet. Remember that if you would like to use a hostname, you need to make sure that hostname actually resolves to your Droplet's IP address, either in your domain's public DNS configuration, or via your local hosts file.
@@ -48,7 +48,7 @@ Run the following command within this project's root directory (the folder conta
 
     ansible-playbook -i examples/prod/inventory provisioning/playbook.yml --sudo
 
-After a few minutes, your Drupal-VM-in-the-cloud Droplet should be fully configured to match your local development environment! You can visit your Droplet and access the fresh Drupal site just like you would locally (e.g. `http://example.drupalvm.com/`).
+After a few minutes, your Drupal-VM-in-the-cloud Droplet should be fully configured to match your local development environment! You can visit your Droplet and access the fresh Drupal site just like you would locally (e.g. `http://example.drupalseven.com/`).
 
 ## Going Further
 

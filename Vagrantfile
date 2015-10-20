@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   if Vagrant.has_plugin?("vagrant-hostsupdater")
     config.hostsupdater.aliases = []
     # Add all hosts that aren't defined as Ansible vars.
-    if vconfig['drupalvm_webserver'] == "apache"
+    if vconfig['drupalseven_webserver'] == "apache"
       for host in vconfig['apache_vhosts']
         unless host['servername'].include? "{{"
           config.hostsupdater.aliases.push(host['servername'])

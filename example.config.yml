@@ -6,8 +6,8 @@ vagrant_user: vagrant
 
 # If you need to run multiple instances of Drupal VM, set a unique hostname,
 # machine name, and IP address for each instance.
-vagrant_hostname: drupalvm.dev
-vagrant_machine_name: drupalvm
+vagrant_hostname: drupalseven.dev
+vagrant_machine_name: drupalseven
 vagrant_ip: 192.168.88.88
 
 # Allow Drupal VM to be accessed via a public network interface on your host.
@@ -17,11 +17,11 @@ vagrant_public_ip: ""
 
 # A list of synced folders, with the keys 'local_path', 'destination', 'id', and
 # a 'type' of [nfs|rsync|smb] (leave empty for slow native shares). See
-# http://docs.drupalvm.com/en/latest/extras/syncing-folders/ for more info.
+# http://docs.drupalseven.com/en/latest/extras/syncing-folders/ for more info.
 vagrant_synced_folders:
   # The first synced folder will be used for the default Drupal installation, if
   # build_makefile: is 'true'.
-  - local_path: ~/Sites/drupalvm
+  - local_path: ~/Sites/drupalseven
     destination: /var/www
     type: nfs
     create: true
@@ -31,7 +31,7 @@ vagrant_memory: 1024
 vagrant_cpus: 2
 
 # The web server software to use. Can be either 'apache' or 'nginx'.
-drupalvm_webserver: apache
+drupalseven_webserver: apache
 
 # Set this to false if you are using a different site deployment strategy and
 # would like to configure 'vagrant_synced_folders' and 'apache_vhosts' manually.
@@ -46,7 +46,7 @@ install_site: true
 # is 'true').
 drupal_major_version: 8
 drupal_core_path: "/var/www/drupal"
-drupal_domain: "drupalvm.dev"
+drupal_domain: "drupalseven.dev"
 drupal_site_name: "Drupal"
 drupal_install_profile: standard
 drupal_enable_modules: [ 'devel' ]
@@ -61,7 +61,7 @@ drupal_site_install_extra_args: []
 
 # Cron jobs are added to the root user's crontab. Keys include name (required),
 # minute, hour, day, weekday, month, job (required), and state.
-drupalvm_cron_jobs: []
+drupalseven_cron_jobs: []
   # - {
   #   name: "Drupal Cron",
   #   minute: "*/30",
@@ -79,13 +79,13 @@ apache_vhosts:
   - servername: "{{ drupal_domain }}"
     documentroot: "{{ drupal_core_path }}"
 
-  - servername: "adminer.drupalvm.dev"
+  - servername: "adminer.drupalseven.dev"
     documentroot: "/opt/adminer"
 
-  - servername: "xhprof.drupalvm.dev"
+  - servername: "xhprof.drupalseven.dev"
     documentroot: "/usr/share/php/xhprof_html"
 
-  - servername: "pimpmylog.drupalvm.dev"
+  - servername: "pimpmylog.drupalseven.dev"
     documentroot: "/usr/share/php/pimpmylog"
 
 apache_remove_default_vhost: true
@@ -102,15 +102,15 @@ nginx_hosts:
     root: "{{ drupal_core_path }}"
     is_php: true
 
-  - server_name: "adminer.drupalvm.dev"
+  - server_name: "adminer.drupalseven.dev"
     root: "/opt/adminer"
     is_php: true
 
-  - server_name: "xhprof.drupalvm.dev"
+  - server_name: "xhprof.drupalseven.dev"
     root: "/usr/share/php/xhprof_html"
     is_php: true
 
-  - server_name: "pimpmylog.drupalvm.dev"
+  - server_name: "pimpmylog.drupalseven.dev"
     root: "/usr/share/php/pimpmylog"
     is_php: true
 
@@ -201,7 +201,7 @@ adminer_install_filename: index.php
 
 # Varnish Configuration.
 varnish_listen_port: "81"
-varnish_default_vcl_template_path: templates/drupalvm.vcl.j2
+varnish_default_vcl_template_path: templates/drupalseven.vcl.j2
 varnish_default_backend_host: "127.0.0.1"
 varnish_default_backend_port: "80"
 

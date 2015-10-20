@@ -30,7 +30,7 @@ _You can also include the `behat/*` and `drupal/drupal-extension` directly in yo
 
 ## Setting up Behat for your project
 
-Using the default Drupal site as an example (it's installed in `/var/www/drupal` by default, and is shared to `~/Sites/drupalvm/drupal` on your host machine), the following steps will help you get your first Behat tests up and running!
+Using the default Drupal site as an example (it's installed in `/var/www/drupal` by default, and is shared to `~/Sites/drupalseven/drupal` on your host machine), the following steps will help you get your first Behat tests up and running!
 
   1. Create a `behat.yml` file inside the docroot of your site (e.g. create this file alongside the rest of the Drupal codebase at `/var/www/drupal/behat.yml`), with the following contents:
 
@@ -45,8 +45,8 @@ Using the default Drupal site as an example (it's installed in `/var/www/drupal`
           goutte: ~
           javascript_session: selenium2
           selenium2:
-            wd_host: http://drupalvm.dev:4444/wd/hub
-          base_url: http://drupalvm.dev
+            wd_host: http://drupalseven.dev:4444/wd/hub
+          base_url: http://drupalseven.dev
         Drupal\DrupalExtension:
           blackbox: ~
           api_driver: 'drupal'

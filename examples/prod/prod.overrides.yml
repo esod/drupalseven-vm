@@ -1,6 +1,6 @@
 ---
 # Normally, this would be set to the hostname of your DigitalOcean Droplet.
-drupal_domain: "drupalvm.dev"
+drupal_domain: "drupalseven.dev"
 
 # Since this will be a publicly-accessible instance of Drupal VM, make sure you
 # configure secure passwords, especially for Drupal and MySQL!

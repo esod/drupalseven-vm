@@ -21,7 +21,7 @@
     state: directory
     mode: 0755
     recurse: true
-  when: drupalvm_webserver == 'apache'
+  when: drupalseven_webserver == 'apache'
 
 - name: Copy Nginx vhosts into place.
   template:
@@ -33,4 +33,4 @@
     mode: 0644
   with_items: nginx_hosts
   notify: restart nginx
-  when: drupalvm_webserver == 'nginx'
+  when: drupalseven_webserver == 'nginx'

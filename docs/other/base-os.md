@@ -27,7 +27,7 @@ mysql_syslog_tag: mariadb
 mysql_pid_file: /var/run/mariadb/mariadb.pid
 ```
 
-**XHProf**: XHProf is installed in a different directory for RedHat/CentOS (as opposed to Debian/Ubuntu), you will need to update the `"xhprof.drupalvm.dev"` vhost to point to the `documentroot` `"/usr/share/pear/xhprof_html"`.
+**XHProf**: XHProf is installed in a different directory for RedHat/CentOS (as opposed to Debian/Ubuntu), you will need to update the `"xhprof.drupalseven.dev"` vhost to point to the `documentroot` `"/usr/share/pear/xhprof_html"`.
 
 ## RedHat Enterprise Linux / CentOS 6
 
@@ -37,4 +37,4 @@ mysql_pid_file: /var/run/mariadb/mariadb.pid
 php_opcache_enabled_in_ini: false
 ```
 
-**XHProf**: XHProf is installed in a different directory for RedHat/CentOS (as opposed to Debian/Ubuntu), you will need to update the `"xhprof.drupalvm.dev"` vhost to point to the `documentroot` `"/usr/share/pear/xhprof_html"`.
+**XHProf**: XHProf is installed in a different directory for RedHat/CentOS (as opposed to Debian/Ubuntu), you will need to update the `"xhprof.drupalseven.dev"` vhost to point to the `documentroot` `"/usr/share/pear/xhprof_html"`.

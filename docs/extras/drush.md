@@ -33,6 +33,6 @@ $ drush @drupaltest.dev status
  Staging config path    :  [...]
 ```
 
-Drupal VM automatically generates a drush alias file in `~/.drush/drupalvm.aliases.drushrc.php` with an alias for every site you have defined in the `apache_vhosts` variable.
+Drupal VM automatically generates a drush alias file in `~/.drush/drupalseven.aliases.drushrc.php` with an alias for every site you have defined in the `apache_vhosts` variable.
 
 You can disable Drupal VM's automatic Drush alias file management if you want to manage drush aliases on your own. Just set the `configure_local_drush_aliases` variable in `config.yml` to `false`.
